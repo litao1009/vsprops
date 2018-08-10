@@ -10,6 +10,7 @@
   <ItemDefinitionGroup>
     <Link>
       <ImportLibrary>$(SolutionDir)build\lib_import\$(ProjectName)\$(PlatformTarget)\$(PlatformToolset)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
