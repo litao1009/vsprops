@@ -7,6 +7,16 @@
     <IntDir>$(SolutionDir)build\obj\$(ProjectName)\$(PlatformTarget)\$(PlatformToolset)\$(Configuration)\</IntDir>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup>
     <Link>
       <ImportLibrary>$(SolutionDir)build\lib_import\$(ProjectName)\$(PlatformTarget)\$(PlatformToolset)\$(Configuration)\$(TargetName).lib</ImportLibrary>
