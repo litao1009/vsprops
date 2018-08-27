@@ -3,7 +3,7 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <OutDir>$(SolutionDir)build\lib\$(ProjectName)\$(PlatformTarget)\$(PlatformToolset)\$(Configuration)\$(TargetName).lib</OutDir>
+    <OutDir>$(SolutionDir)build\lib\$(ProjectName)\$(PlatformTarget)\$(PlatformToolset)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\obj\$(ProjectName)\$(PlatformTarget)\$(PlatformToolset)\$(Configuration)\</IntDir>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
