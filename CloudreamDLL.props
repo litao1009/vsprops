@@ -21,7 +21,7 @@
   <ItemDefinitionGroup>
     <Link>
       <ImportLibrary>$(SolutionDir)build\lib_import\$(ProjectName)\$(PlatformTarget)\$(PlatformToolset)\$(Configuration)\$(TargetName).lib</ImportLibrary>
-      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <GenerateDebugInformation Condition="$(MSBuildToolsVersion) > 14.0">DebugFull</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
