@@ -6,7 +6,7 @@
     <OutDir>$(SolutionDir)build\bin\$(PlatformTarget)\$(PlatformToolset)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\obj\$(ProjectName)\$(PlatformTarget)\$(PlatformToolset)\$(Configuration)\</IntDir>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>include;src;$(IncludePath)</IncludePath>
+    <IncludePath>include;src;include/$(ProjectName);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
     <ClCompile>
